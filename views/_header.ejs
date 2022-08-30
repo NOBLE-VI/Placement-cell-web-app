@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="/css/header.css">
+
+<header>
+
+    <div>
+        <h2>PlaceApp</h2>
+    </div>
+
+    <ul>
+        <% if(locals.user) { %> 
+            <div id="create-interview-container">
+
+                <li>
+                    <a href="/interview/home">CREATE INTERVIEW</a>
+                </li>
+
+                <li>
+                    <a href="/">CREATE STUDENT</a>
+                </li>
+
+            </div>
+           
+
+            <li>
+                <a href="/user/profile">
+                    <%= user.name %>
+                </a>
+            </li>   
+            <li>
+                <a href="/user/sign-out">SIGN OUT</a>
+            </li> 
+            
+        <%} else { %> 
+                
+            <li>
+                <a href="/user/sign-in">Sign In</a>
+            </li>
+            <li>
+                <a href="/user/sign-up">Sign Up</a>
+            </li>
+       
+        <% } %>
+
+
+
+    </ul>
+
+
+
+</header>

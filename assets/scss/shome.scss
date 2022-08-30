@@ -1,0 +1,188 @@
+#create-student-page{
+
+    background-color: rgb(48, 48, 48);
+    border-radius: 20px;
+    height: 92%;
+    display: flex;
+    justify-content: space-evenly;
+
+
+    form{
+        font-family: sans-serif;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        height: 92%;
+        padding-top: 50px;
+        border: 2px solid grey;
+        border-radius: 20px;
+
+
+        h1{
+            margin-bottom: 80px;
+            font-size: 35px;
+        }
+
+        div{
+            margin-bottom: 70px;
+        }
+
+        #div-3{
+            width: 650px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input{
+            width: 500px;
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid rgb(114, 114, 114);
+            background-color: white;
+            color: rgb(0, 0, 0);
+            padding-left: 10px;
+        }
+
+        .small-input-box{
+            width: 150px;
+            
+        }
+
+        .small-input-box2{
+            width: 200px;
+            
+        }
+
+        .medium-input-box{
+            width: 325px;
+        }
+
+
+        #create-btn{
+            font-size: 16px;
+            background-color: rgb(89, 180, 255);
+            cursor: pointer; 
+            transition: all 0.1s ease-in-out;
+        }
+
+        #create-btn:hover{
+            background-color: grey;
+            cursor: pointer;
+
+        }
+
+    }
+    
+    #all-student{
+        font-family: sans-serif;
+        display: inline-block;
+        flex-grow: 1;
+        width: auto;
+        height: auto;
+        justify-self: flex-end;
+
+        h3{
+            width: 90%;
+            color: RGB(89, 180, 255);
+            text-align: center;
+            padding: 0px 10px;
+            text-decoration: underline 2px grey;
+        }
+
+        ul{
+            
+            color: aliceblue;
+            display: flex;
+            flex-wrap: wrap;
+            // border: 2px solid red;
+            justify-content:flex-start;
+            width: 90%;
+            overflow-y: scroll;
+            height: 95%;
+
+            li{
+                list-style: none;
+                overflow-y: scroll;
+                // overflow-x: hidden;
+                border-left: 2px solid  rgb(89, 180, 255);
+                p{
+                    color: azure;
+                    background-color:   RGB(48, 48, 48);
+                    padding: 5px 5px;
+                    margin: 9px 5px;
+                    border-radius: 10px;
+
+                    span{
+                        padding-left: 10px;
+                        color: rgb(168, 168, 168);
+                    }
+
+
+
+                }
+
+            }
+
+            li::-webkit-scrollbar {
+                width: 10px;
+    
+                
+            }
+            
+           li::-webkit-scrollbar-track {
+                background-color: rgba(169, 169, 169, 0);
+                border-right: 1px solid grey;
+                border-radius: 10px;
+            }
+            
+            li::-webkit-scrollbar-thumb {
+                background-color: rgb(89, 180, 255);
+                border-radius: 10px;
+    
+            }
+
+
+            .student-data{
+
+                width: 28%;
+                height: 45%;
+                background-color: rgb(206, 206, 206);
+                border-radius: 10px;
+                // padding-left: 10px  ;
+                margin: 10px;
+            }
+
+        }
+
+
+       ul::-webkit-scrollbar {
+            width: 10px;
+
+            
+        }
+        
+       ul::-webkit-scrollbar-track {
+            background-color: rgba(169, 169, 169, 0);
+            border-right: 1px solid grey;
+            border-radius: 10px;
+        }
+        
+        ul::-webkit-scrollbar-thumb {
+            background-color: rgb(89, 180, 255);
+            border-radius: 10px;
+
+        }
+
+
+    }
+
+   
+
+   
+
+
+
+}

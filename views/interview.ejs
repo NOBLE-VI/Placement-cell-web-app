@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="/css/interview.css">
+
+<div id="interview-page-container">
+   
+
+
+    <form action="/interview/create" id="interview-create-from" method="post">
+        <h2>Interview Page</h2>
+        <div id="interview-form">
+            <select id="cars" class="inputs" name="student" aria-placeholder="Select student">
+
+
+                <% for(student of students) {%>
+                    
+                    <option value="<%= student._id %>"><%= student.name %></option>
+                    
+                    
+                <%}%>
+
+            </select>
+
+            <input type="text" class="inputs" name="company_name" placeholder="Company Name" required>
+
+            
+                <select name="status" class="inputs">
+
+                    <option value="Placed">Placed</option>
+                    <option value="Round 1">Round 1</option>
+                    <option value="Round 2">Round 2</option>
+                    <option value="On Hold">On Hold</option>
+
+                </select>
+
+            <input type="date" class="inputs" name="Date" min="1997-01-01" max="2030-12-31" required>
+
+            <input id="submit-btn" type="submit" value="Submit">
+    </div>
+
+    </form>
+
+    <div id="show-interviews-container">
+            <div id="download-btn-container">
+                <form action="/interview/download" method="get">
+                    <input type="submit" id="download-btn" value="Download CSV">
+                </form>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Student name</th>
+                        <th>Companty name</th>
+                        <th>Student status</th>
+                        <th>Date</th>
+                      </tr>
+                    <% for(interview of interviews) {%>
+                     
+                        <tr>
+                            <td><%=interview.student.name %></td>
+                            <td><%=interview.company_name %></td>
+                            <td><%=interview.status %></td>
+                            <td><%= interview.Date.toDateString() %></td>
+                        </tr>
+        
+                    <%}%>
+        
+        
+                </table>
+        
+
+            </div>
+       
+
+    </div>
+
+
+
+</div>

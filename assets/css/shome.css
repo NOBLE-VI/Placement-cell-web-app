@@ -1,0 +1,107 @@
+#create-student-page {
+  background-color: #303030;
+  border-radius: 20px;
+  height: 92%;
+  display: flex;
+  justify-content: space-evenly; }
+  #create-student-page form {
+    font-family: sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 92%;
+    padding-top: 50px;
+    border: 2px solid grey;
+    border-radius: 20px; }
+    #create-student-page form h1 {
+      margin-bottom: 80px;
+      font-size: 35px; }
+    #create-student-page form div {
+      margin-bottom: 70px; }
+    #create-student-page form #div-3 {
+      width: 650px;
+      display: flex;
+      justify-content: space-between; }
+    #create-student-page form input {
+      width: 500px;
+      height: 40px;
+      border-radius: 10px;
+      border: 2px solid #727272;
+      background-color: white;
+      color: black;
+      padding-left: 10px; }
+    #create-student-page form .small-input-box {
+      width: 150px; }
+    #create-student-page form .small-input-box2 {
+      width: 200px; }
+    #create-student-page form .medium-input-box {
+      width: 325px; }
+    #create-student-page form #create-btn {
+      font-size: 16px;
+      background-color: #59b4ff;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out; }
+    #create-student-page form #create-btn:hover {
+      background-color: grey;
+      cursor: pointer; }
+  #create-student-page #all-student {
+    font-family: sans-serif;
+    display: inline-block;
+    flex-grow: 1;
+    width: auto;
+    height: auto;
+    justify-self: flex-end; }
+    #create-student-page #all-student h3 {
+      width: 90%;
+      color: RGB(89, 180, 255);
+      text-align: center;
+      padding: 0px 10px;
+      text-decoration: underline 2px grey; }
+    #create-student-page #all-student ul {
+      color: aliceblue;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 90%;
+      overflow-y: scroll;
+      height: 95%; }
+      #create-student-page #all-student ul li {
+        list-style: none;
+        overflow-y: scroll;
+        border-left: 2px solid #59b4ff; }
+        #create-student-page #all-student ul li p {
+          color: azure;
+          background-color: RGB(48, 48, 48);
+          padding: 5px 5px;
+          margin: 9px 5px;
+          border-radius: 10px; }
+          #create-student-page #all-student ul li p span {
+            padding-left: 10px;
+            color: #a8a8a8; }
+      #create-student-page #all-student ul li::-webkit-scrollbar {
+        width: 10px; }
+      #create-student-page #all-student ul li::-webkit-scrollbar-track {
+        background-color: rgba(169, 169, 169, 0);
+        border-right: 1px solid grey;
+        border-radius: 10px; }
+      #create-student-page #all-student ul li::-webkit-scrollbar-thumb {
+        background-color: #59b4ff;
+        border-radius: 10px; }
+      #create-student-page #all-student ul .student-data {
+        width: 28%;
+        height: 45%;
+        background-color: #cecece;
+        border-radius: 10px;
+        margin: 10px; }
+    #create-student-page #all-student ul::-webkit-scrollbar {
+      width: 10px; }
+    #create-student-page #all-student ul::-webkit-scrollbar-track {
+      background-color: rgba(169, 169, 169, 0);
+      border-right: 1px solid grey;
+      border-radius: 10px; }
+    #create-student-page #all-student ul::-webkit-scrollbar-thumb {
+      background-color: #59b4ff;
+      border-radius: 10px; }

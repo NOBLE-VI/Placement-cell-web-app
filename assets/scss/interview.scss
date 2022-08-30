@@ -1,0 +1,139 @@
+#interview-page-container{
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+
+    #interview-create-from{
+       background-color: white; 
+       width: 40%;
+       height: 60%;
+       border-radius: 20px;
+       border: 2px solid grey;
+       padding: 50px 20px;
+
+
+        
+    h2{
+        color: black;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+
+    #interview-form{
+
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        row-gap: 10px;
+        width: auto;
+        height: 100%;
+        // border: 2px solid red;
+        margin: auto;
+        align-items: center;
+        justify-content: flex-start;
+
+
+        .inputs{
+            font-size: 18px;
+            padding: 0px 10px;
+            width: 55%;
+            height: 10%;
+            border-radius: 20px;
+            border: 2px solid grey;;
+        }
+
+        #submit-btn{
+            width: 20%;
+            height: 10%;
+            background-color:  rgb(80, 209, 80);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+        }
+
+        #submit-btn:hover{
+            width: 20%;
+            height: 10%;
+            background-color:  rgb(80, 80, 80);
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        }
+    }
+
+    #show-interviews-container{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid  rgb(89, 180, 255);
+        border-radius: 20px;
+        width:60%;
+
+        #download-btn-container{
+            width: 90%;
+            height: auto;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 20px 20px 0px;
+            margin-left: auto;
+
+            #download-btn{
+                padding: 20px 30px;
+                background-color: rgb(80, 209, 80);
+                border-radius: 20px;
+                font-size: 18px;
+                font-weight: 600;
+                transition: all .2s ease-in-out;
+            }
+
+            #download-btn:hover{
+                
+                background-color: rgb(42, 128, 42);
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+
+        
+        table{
+            width: 100%;
+            color: white;
+            font-family: sans-serif;
+            border-collapse: collapse;
+
+            th, tr {
+                padding:0px;
+                margin: 0px;
+                border-bottom: 1px solid #ddd;
+                border-right: 1px solid rgb(131, 131, 131);
+                
+              }
+              
+              th{
+                padding: 6px 0px;
+                background-color:  rgb(0, 0, 0);
+                border-right: 1px solid rgb(131, 131, 131);
+                
+              }
+
+              td{
+                padding: 10px;
+                background-color:  rgb(94, 94, 94);
+                border-right: 1px solid rgb(0, 0, 0);
+                border-radius: 10px;
+              }
+              
+        }
+
+
+    }
+}
+

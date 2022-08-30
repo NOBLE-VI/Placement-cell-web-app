@@ -1,0 +1,20 @@
+#footer-container {
+  font-family: sans-serif;
+  border-top: 5px solid #59b4ff;
+  width: 100%;
+  height: 15%;
+  background-color: RGB(48, 48, 48);
+  color: white;
+  border-radius: 20px 20px 0px 0px;
+  position: absolute;
+  bottom: -150;
+  right: 0;
+  left: 0; }
+  #footer-container #company-name {
+    display: flex;
+    height: 100%;
+    width: 20%;
+    align-items: flex-end;
+    color: #59b4ff; }
+    #footer-container #company-name p {
+      padding-left: 20px; }

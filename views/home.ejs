@@ -1,0 +1,84 @@
+
+
+<link rel="stylesheet" href="/css/shome.css">
+
+     
+
+
+        <% if(locals.user) {%> 
+           
+            <div id="create-student-page">
+                
+                <form action="/student/create" method="post">
+                    
+                    <h1> CREATE STUDENT </h1>
+
+                    <div id="div-1">
+                        <input type="text" class="small-input-box" name="id" placeholder="Student ID" required>
+                        <input type="text" class="large-input-box" name="name" placeholder="Student Name" required>
+                    </div>
+
+                    <div id="div-2">
+                        <input type="text" class="medium-input-box" name="college" placeholder="College" required>
+                        <input type="text" class="medium-input-box" name="status" placeholder="University Result" required>
+                    </div>
+
+                    <div id="div-3">
+                        <input type="text" class="small-input-box2" name="DSA_Final_Score" placeholder="DSA Final Score" required>
+                        <input type="text" class="small-input-box2" name="WebD_FinalScore" placeholder="Web Development Final Score" required>
+                        <input type="text" class="small-input-box2" name="React_Final_Score" placeholder="React Final Score" required>
+                    </div>
+
+                    <div id="div-4">
+                        <input type="date" class="medium-input-box" name="interview_date" placeholder="" required>
+                        <input type="text" class="medium-input-box" name="batch" placeholder="Student Batch">
+                        <!-- <input type="text" class="medium-input-box" name="interview_student_result" placeholder="Interview Result"> -->
+                    </div>
+
+
+            
+                    <input type="submit" id="create-btn" value="Create">
+            
+                   </form>
+
+                   <div id="all-student">
+                    <h3>ALL STUDENTS</h3>
+                    <ul>
+                        <% for(student of students) { %>
+                            
+                            <li class="student-data">
+                                
+                                <p>id: <span>  <%= student.id %> </span></p>
+                                <p>Name: <span>  <%= student.name %> </span></p>
+                                <p>college: <span>  <%= student.college %> </span></p>
+                                <p>University Result: <span>  <%= student.status %> </span></p>
+                                <p>DSA_Final_Score: <span>  <%= student.DSA_Final_Score %> </span></p>
+                                <p>WebD_FinalScore: <span>  <%= student.WebD_FinalScore %> </span></p>
+                                <p>React_Final_Score: <span>  <%= student.React_Final_Score %> </span></p>
+                                <p>Student's batch: <span>  <%= student.batch %> </span></p>
+                                <p>interview_date: <span>  <%= student.interview_date %> </span></p>
+
+
+                            </li>
+                            
+                        <%}%>
+                    </ul>
+
+                   </div>
+
+                
+            </div>
+
+            
+        <% } else{ %>
+
+                <%- include("sign-in") -%>
+
+            <% } %>
+
+
+
+    
+
+      
+
